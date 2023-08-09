@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+  width:1280px;
+  height:100%;
+  overflow-x:hidden;
+  background-color:#dec496;
+  width:auto;
+  display:flex;
+  flex-direction:column;
+}
+
+.navbar{
+  z-index:3;
+  background-color:#392b13;
+  padding:10px;
+  margin-top:-8px;
+  width:100%;
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index:-1;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* TopPage */
+
+.dropdown-menu{
+    animation: 0.5s slidedown
+}
+
+.dropdown-menu a:hover{
+  color:#392b13 !important;
+  background-color:transparent;
+}
+
+.coffeetext {
+  position: relative;
+  position: absolute;
+  left:37%;
+}
+
+.coffeetext h2 {
+  color: #fff;
+  font-size: 6vw;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.coffeetext h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #F4EBD0;
+}
+
+.coffeetext h2:nth-child(2) {
+  color:#392b13;
+  animation: animate 1.5s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+@keyframes slidedown {
+    from {
+        transform: translateY(-5%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0, 0, 0, 0.229);
+}
+
+/* MidPage */
+
+.introrow{
+  margin-top:2;
+  margin-bottom:5%;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+}
+
+.introabouttext{
+  font-size:18px;
+}
+
+.introaboutheader{
+  font-size:40px;
+  color:#5c3c03;
+}
+
+.radiorow{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+}
+
+.introtext{
+  width:50%;
+  color:#5c3c03;
+  height:auto;
+}
+
+.radio-btns {
+  display: flex;
+  width:38%;
+  margin-top:3%;
+  box-shadow: 0px 0px 100px 5px #835404;
+  margin-bottom:auto;
+  grid-template-columns: repeat(3, 100px);
+}
+
+.radio-btns:hover .radio-btns__btn:not(:hover) {
+  filter: grayscale(80%);
+  opacity: 0.75;
+}
+
+.radio-btns:hover .radio-btns__btn:not(:hover)::after {
+  background-color: rgba(#000, 0.5);
+}
+
+.radio-btns__btn {
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.radio-btns__btn:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#392b1323;
+}
+
+.radio-btns__btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#000, 0);
+  transition: .3s;
+}
+
+.radio-btns__btn img {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.reviewheader{
+  font-size:40px;
+  color:#5c3c03;
+}
+
+.reviewexampletab{
+  width:1000px;
+  display:flex;
+  flex-direction:row;
+  gap:20px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.reviewexample{
+  width:100%;
+  padding:15px;
+  font-size:20px;
+  white-space:nowrap;
+  background-color:#ffffff;
+  display:inline-block;
+  flex-wrap:nowrap;
+  box-shadow:rgb(165, 110, 42) 5px 5px 20px 5px;
+  color:rgb(165, 110, 42);
+  border-radius:10px;
+}
+
+.checked{
+  color:rgb(240, 168, 35);
+}
+
+/* BottomPage */
+
+.footerheader{
+  padding:10px;
+  font-size:25px;
+  margin-left:-10px;
+}
+
+.footertext{
+  font-size:18px;
+  text-align:left;
+  list-style:none;
+  margin-top:5px;
+}
+
+
+
+/* MediaQuery */
+
+@media all and (max-width: 1404px) {
+  .introrow{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+  }
+
+  .introtext{
+    width:100%;
+    margin-bottom:5%;
+  }
+  
+  .radiorow{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    border-top:solid #835404 5px;
+    border-bottom:solid #835404 5px;
+  }
+
+  .radio-btns{
+    width:100%;
+  }
+}
+
+@media all and (max-width: 694px){
+  .footerheader{
+    font-size:16px;
+    margin-top:10px;
+  }
+
+  .footertext{
+    font-size:12px;
+  }
+
+  #socials, .socialicons{
+    text-align:left;
+  }
+}
+
+
+@media all and (min-width: 1115px){
+  .introabouttext{
+    font-size:26px;
+  }
+}
+
