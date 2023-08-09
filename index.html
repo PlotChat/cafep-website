@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <img src="images/angryimg.png" id="bg">
+    <nav class="navbar navbar-expand-lg" style="font-family:Arial, Helvetica, sans-serif">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="img-fluid" src="images\navlogo.png" style="margin-left:-15px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="box-shadow:none;">
+            <span><img class="img-fluid" src="images\showmore.png"></span> 
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="#" style="color:#F4EBD0">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a style="color:#F4EBD0" class="nav-link dropdown-toggle active fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu" style="background-color:#B68D40;">
+                  <li><a class="dropdown-item fw-semibold" href="#" style="color:#F4EBD0">Coffee</a></li>
+                  <li><a class="dropdown-item fw-semibold" href="#" style="color:#F4EBD0">Juice</a></li>
+                  <li><a class="dropdown-item fw-semibold" href="#" style="color:#F4EBD0">Bread</a></li>
+                  <li><a class="dropdown-item fw-semibold" href="#" style="color:#F4EBD0">Dessert</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="#" style="color:#F4EBD0">App</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="#" style="color:#cffcc1">Charity</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="#" style="color:#F4EBD0">Account</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 mw-100" style="background-color:#F4EBD0;" type="search" placeholder="Search for drinks, juice, ..." aria-label="Search">
+              <button class="btn fw-semibold" style="background-color:#D6AD60;" type="submit">Go </button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <div>
+      <div id="carouselExampleAutoplaying" style="border-bottom-color:#835404;border-bottom-width:4px;border-bottom-style:solid;z-index:2;margin-top:-6%" class="carousel carousel-fade slide mx-auto" data-bs-ride="carousel">
+        <div class="carousel-inner position-relative">
+          <div class="position-absolute fw-bold" style="margin-top:10%;;margin-bottom:10px;margin-left:5%;font-family:'Times New Roman', Times, serif;font-size:5vw;color:#F4EBD0;z-index:2">
+              <div>We make</div>
+              <div style="margin-bottom:15%">the best</div>    
+                <div class="coffeetext">
+                  <h2>Coffee</h2>
+                  <h2>Coffee</h2>
+                </div>
+              <div style="margin-top:30%;">you'll ever</div>
+              <div>need</div>     
+          </div>
+          <div class="carousel-item active">
+            <img src="images\coffee1.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images\coffee2.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images\coffee3.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images\coffee4.jpg" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" style="visibility:hidden;" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" style="visibility:hidden;" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="introrow">
+          <div class="introtext">
+            <div class="m-4 fw-semibold text-center introaboutheader">About us</div>
+            <div class="w-75 mx-auto" style="background-color:#a07b3b;height:2px;"></div>
+            <div class="m-4 text-center introabouttext"> 
+              Welcome to CafeP, a place where passion for coffee meets exceptional taste. Situated in the heart of the city, CafeP is more than just a coffee shop – it's a haven for coffee enthusiasts and a cozy retreat for those seeking a moment of tranquility.<br><br>
+              Step through our doors, and the inviting aroma of freshly brewed coffee will embrace you like an old friend. Our skilled baristas are true coffee artisans, dedicated to the art of creating the perfect cup. Whether you crave a velvety cappuccino, a bold espresso, or a meticulously crafted latte art, we have a delightful range of specialty coffee blends to suit every palate.<br><br>
+            </div>
+            <div class="w-75 mx-auto" style="background-color:#a07b3b;height:2px;"></div>
+          </div>
+          <div class="radio-btns" role="radiogroup">
+            <div class="radiorow">
+              <div style="display:flex;flex-direction:row;">
+                <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image one">
+                  <img src="https://www.acouplecooks.com/wp-content/uploads/2021/08/Cafe-Au-Lait-001s.jpg">
+                </div>    
+                <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image two">
+                  <img src="https://soomfoods.com/cdn/shop/articles/20220922180225-blog-20post-20template-20-3_1600x.jpg?v=1686597183" style="width:783px">
+                </div>
+              </div>
+              <div style="display:flex;flex-direction:row;">
+                 <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image three">
+                  <img src="images\coffee10.png" style="width:783px">
+                </div>
+                <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image one">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/13/96/14/c6/photo0jpg.jpg" style="width:783px">
+                </div>
+              </div>
+            </div>
+          </div>  
+      </div>
+      <div class="reviews">
+        <div class="m-4 fw-semibold text-start reviewheader">Our loyal</div>
+        <div class="m-4 fw-semibold text-start reviewheader">customers' opinions:</div>
+        <div class="reviewexampletab">
+          <div class="reviewexample">
+            <div class="row">
+              <div class="col-4">
+                <img src="images/pfp1.png" style="width:80px;">
+                <div>
+                  <span class="fa fa-star checked" style="font-size:12px;"></span>
+                  <span class="fa fa-star checked" style="font-size:12px;"></span>
+                  <span class="fa fa-star checked" style="font-size:12px;"></span>
+                  <span class="fa fa-star-o" style="font-size:12px;"></span>
+                  <span class="fa fa-star-o" style="font-size:12px;"></span>
+                  <div class="fw-bold"></div>
+                </div>
+              </div>
+              <div class="col-5">
+                <div style="font-size:19px;">@ChrisopherHamshire</div>
+                <div style="font-size:18px;">Simply amazing. I can't</div>
+                <div style="font-size:18px;"> stop drinking!</div>
+              </div>
+            </div>
+          </div>
+          <div class="reviewexample">
+            <div class="row">
+              <div class="col-4">
+                <img src="images/pfp3.webp" style="width:80px;">
+                <div>
+                  <span class="fa fa-star checked" style="font-size:12px;"></span>
+                  <span class="fa fa-star checked" style="font-size:12px;"></span>
+                  <span class="fa fa-star checked" style="font-size:12px;"></span>
+                  <span class="fa fa-star-checked" style="font-size:12px;"></span>
+                  <span class="fa fa-star-o" style="font-size:12px;"></span>
+                  <div class="fw-bold"></div>
+                </div>
+              </div>
+              <div class="col-5">
+                <div style="font-size:19px;">@FlintRobins</div>
+                <div style="font-size:18px;">Delicious coffee!</div>
+                <div style="font-size:18px;">Definitely worth it!</div>
+              </div>
+            </div>
+          </div>
+          <div class="reviewexample">
+            <div class="row">
+              <div class="col-4">
+                <img src="images/pfp2.png" class="rounded-circle" style="width:80px;">
+                <div>
+                  <span class="fa fa-star checked" style="font-size:12px;"></span>
+                  <span class="fa fa-star checked" style="font-size:12px;"></span>
+                  <span class="fa fa-star checked" style="font-size:12px;"></span>
+                  <span class="fa fa-star-checked" style="font-size:12px;"></span>
+                  <span class="fa fa-star-o" style="font-size:12px;"></span>
+                  <div class="fw-bold"></div>
+                </div>
+              </div>
+              <div class="col-5">
+                <div style="font-size:19px;">@PerrellBrown</div>
+                <div style="font-size:18px;">Simply amazing. I can't</div>
+                <div style="font-size:18px;"> stop drinking!</div>
+              </div>
+            </div>
+          </div>
+        </div>       
+      </div>
+    </div>
+    <footer style="border-top-color:#835404;border-top-width:4px;border-top-style:solid;padding:0 50px 0px;color:#F4EBD0;margin-top:auto;background-color:#B68D40;">
+      <div class="row fw-semibold">
+            <div class="col-sm-3 col-md-3">
+                <div class="footerheader">Locations</div>
+                <div class="footertext">
+                    <li>2-6 Bis Điện Biên Phủ, P.Đa Kao, Quận 1, Tp Hồ Chí Minh</li>
+                    <li style="margin-top:7px;">298 Cầu Giấy, P. Quan Hoa, Q. Cầu Giấy, Hà Nội</li>
+                    <li style="margin-top:7px;">234 Phạm Văn Đồng, Cổ Nhuế, Bắc Từ Liêm, Hà Nội</li>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <div>
+                    <div class="footerheader">Privacy Policy</div> 
+                    <div class="footertext">
+                        <li>Interpretation and Definitions</li>
+                        <li style="margin-top:7px;">Personal Data</li>
+                        <li style="margin-top:7px;">Social Data</li>
+                        <li style="margin-top:7px;">Data rights</li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <div class="footerheader">Terms and Conditions</div>
+                <div class="footertext">
+                  <li>Online services</li>
+                  <li style="margin-top:7px;">Information practices and communication</li>
+                  <li style="margin-top:7px;">Sending orders</li>
+                  <li style="margin-top:7px;">Copyright notice</li>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3 text-center">
+                <div class="footerheader" id="socials">Stay in touch with us!</div> 
+                <div class="socialicons">
+                  <a href="#"><img src="images\facebook.png"></a>
+                  <a href="#"><img src="images\youtube.png"></a>
+                  <a href="#"><img src="images\instagram.png">     </a>             
+                </div>
+            </div>
+      </div>
+      <div class="text-center footerheader" style="height:40px;margin-top:20px;font-size:25px;">
+        © 2023-2023 CAFEP All Rights Reserved
+      </div>
+    </footer>
+</body>
+</html>
