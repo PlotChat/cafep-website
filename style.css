@@ -2,8 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
-html,body
-{
+html,body,header{
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -237,12 +236,12 @@ body{
   box-shadow:rgb(165, 110, 42) 5px 5px 20px 5px;
 }
 
-.form-control{
+.ratingform{
   font-size:20px;
   color:#5c3c03 !important;
 }
 
-.form-control::placeholder {
+.ratingform::placeholder {
   color:#5c3c03; ;
 }
 
@@ -265,7 +264,9 @@ body{
   margin-top:5px;
 }
 
-
+.copyrighttext{
+  font-size:25px;
+}
 
 /* MediaQuery */
 
@@ -304,7 +305,7 @@ body{
 }
 
 @media all and (max-width: 900px){
-  .footerheader{
+  .footerheader, .copyrighttext{
     font-size:16px;
     margin-top:10px;
   }
