@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="menustyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>coffeeshop</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <img src="images/angryimg.png" id="bg">
+    <nav class="navbar navbar-expand-lg" style="font-family:Arial, Helvetica, sans-serif">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="img-fluid" src="images\navlogo.png" style="margin-left:-15px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="box-shadow:none;">
+            <span><img class="img-fluid" src="images\showmore.png"></span> 
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="index.html" style="color:#F4EBD0">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a style="color:#F4EBD0" class="nav-link dropdown-toggle active fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu" style="background-color:#B68D40;">
+                  <li><a class="dropdown-item fw-semibold" href="menu.html" style="color:#F4EBD0">View Menu</a></li>
+                  <li><a class="dropdown-item fw-semibold" href="#" style="color:#F4EBD0">Coffee</a></li>
+                  <li><a class="dropdown-item fw-semibold" href="#" style="color:#F4EBD0">Juice</a></li>
+                  <li><a class="dropdown-item fw-semibold" href="#" style="color:#F4EBD0">Bread</a></li>
+                  <li><a class="dropdown-item fw-semibold" href="#" style="color:#F4EBD0">Dessert</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="#" style="color:#F4EBD0">App</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="#" style="color:#cffcc1">Charity</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="#" style="color:#F4EBD0">Account</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 mw-100" style="background-color:#F4EBD0;" type="search" placeholder="Search for drinks, juice, ..." aria-label="Search">
+              <button class="btn fw-semibold" style="background-color:#D6AD60;" type="submit">Go </button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <div class="mt-5 mb-3 fw-semibold text-center menutopheader">Menu</div>
+    <nav id="navbar-example2" class="navbar px-3 mb-3 mt-2" style="background-color:rgb(255, 239, 219);">
+        <a class="navbar-brand fw-semibold" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">Coffee</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Drinks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Bread</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Desserts</a>
+          </li>
+        </ul>
+      </nav>
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0" style="background-color:rgb(255, 239, 219);">
+        <h4 class="fw-semibold menuheader" id="scrollspyHeading1">Coffee</h4>
+        <div class="coffeemenu">
+            <img class="">
+        </div>
+        <h4 class="fw-semibold menuheader" id="scrollspyHeading2">Drinks</h4>
+
+        <h4 class="fw-semibold menuheader" id="scrollspyHeading3">Bread</h4>
+
+        <h4 class="fw-semibold menuheader" id="scrollspyHeading4">Desserts</h4>
+
+      </div>
+</body>
+</html>
