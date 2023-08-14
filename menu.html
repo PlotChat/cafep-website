@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>coffeeshop</title>
 </head>
-<body style="height:100%;">
+<body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <img src="images/angryimg.png" id="bg">
     <nav class="navbar navbar-expand-lg" style="font-family:Arial, Helvetica, sans-serif">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="img-fluid" src="images\navlogo.png" style="margin-left:-15px;"></a>
+          <a class="navbar-brand" href="index.html"><img class="img-fluid" src="images\navlogo.png" style="margin-left:-15px;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="box-shadow:none;">
             <span><img class="img-fluid" src="images\showmore.png"></span> 
           </button>
@@ -28,21 +28,22 @@
                   Menu
                 </a>
                 <ul class="dropdown-menu" style="background-color:#B68D40;">
-                  <li><a class="dropdown-item fw-semibold" href="menu.html" style="color:#F4EBD0">View Menu</a></li>
-                  <li><a class="dropdown-item fw-semibold" href="#" style="color:#F4EBD0">Coffee</a></li>
-                  <li><a class="dropdown-item fw-semibold" href="#" style="color:#F4EBD0">Juice</a></li>
-                  <li><a class="dropdown-item fw-semibold" href="#" style="color:#F4EBD0">Bread</a></li>
-                  <li><a class="dropdown-item fw-semibold" href="#" style="color:#F4EBD0">Dessert</a></li>
+                  <li><a class="dropdown-item" href="menu.html" style="color:#F4EBD0">View Menu</a></li>
+                  <li><a class="dropdown-item" href="#" style="color:#F4EBD0">Coffee</a></li>
+                  <li><a class="dropdown-item" href="#" style="color:#F4EBD0">Juice</a></li>
+                  <li><a class="dropdown-item" href="#" style="color:#F4EBD0">Bread</a></li>
+                  <li><a class="dropdown-item" href="#" style="color:#F4EBD0">Dessert</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fw-semibold" aria-current="page" href="#" style="color:#F4EBD0">App</a>
+                <a class="nav-link active fw-semibold" aria-current="page" href="app.html" style="color:#edccf9">App</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fw-semibold" aria-current="page" href="#" style="color:#cffcc1">Charity</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-semibold" aria-current="page" href="#" style="color:#F4EBD0">Account</a>
+                <a class="nav-link active fw-semibold position-relative" aria-current="page" href="#" style="color:#F4EBD0">Account
+                  <span class="position-absolute translate-middle badge rounded-pill bg-danger accnotify">
+                  3+
+                  <span class="visually-hidden">unread notifications</span>
+                </a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -249,9 +250,9 @@
       <div class="row row-cols-2 g-4">
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\hamsandwich.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Ham sandwich<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -259,9 +260,9 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\ohmysub.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              "Oh my" submarine<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -269,9 +270,9 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\grilledcheese.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Grilled cheese<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -279,9 +280,9 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\eggandcheese.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Breakfast sandwich<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -289,9 +290,9 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\baconandegg.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Brunch sandwich<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -299,9 +300,9 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\clubsandwich.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Club sandwich<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -309,9 +310,9 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\pbandj.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              PB&J<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -319,9 +320,9 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\tunasandwich.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Tuna sandwich<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -329,9 +330,9 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\pulledpork.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Pulled pork<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -344,9 +345,9 @@
       <div class="row row-cols-2 g-4">
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\cupcake.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Cupcake<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -354,9 +355,9 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\lavacake.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Lava cake<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -364,9 +365,9 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\cinnamonbun.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Cinnamon bun<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -374,9 +375,9 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\cheesecake.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Cheese cake<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -384,9 +385,9 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\icecream.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Chocolate ice cream<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -394,9 +395,9 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\yogurt.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Yogurt<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -404,9 +405,9 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\applepie.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Apple pie<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -414,9 +415,9 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\croissaint.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Croissaint<br>
               5$
             </div>
             <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
@@ -424,14 +425,26 @@
         </div>
         <div class="col-sm-4">
           <div class="menuitem" style="height:100%;">
-            <img src="images\latte.png">
+            <img src="images\caramelflan.png">
             <div class="fs-5 fw-bold">
-              Latte<br>
+              Caramel flan<br>
               5$
             </div>
-            <button type="button" style="width:85%;" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header" style="background-color:#392b13">
+              <strong class="me-auto"><img src="images\navlogo.png" style="width:50%"></strong>
+              <small style="width:30%;text-align:right;color:#F4EBD0">just now</small>
+              <button type="button" class="btn-close" style="background-color:#F4EBD0;" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body" style="background-color:#F4EBD0;color:#392b13">
+              (Item name) is added to cart!
+          </div>
       </div>
     </div>
   </div>
@@ -488,5 +501,12 @@
       © 2023-2023 CAFEP All Rights Reserved
     </div>
   </footer>
+  <script>
+    function showToast() {
+        var toastElement = document.querySelector('.toast');
+        var toast = new bootstrap.Toast(toastElement);
+        toast.show();
+    }
+  </script>
 </body>
 </html>

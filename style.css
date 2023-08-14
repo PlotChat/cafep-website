@@ -38,8 +38,6 @@ body{
 
 /* HomePage */
 
-/* TopPage */
-
 .dropdown-menu{
     animation: 0.5s slidedown
 }
@@ -70,6 +68,12 @@ body{
 .coffeetext h2:nth-child(2){
   color:#392b13;
   animation: animate 1.5s ease-in-out infinite;
+}
+
+.accnotify{
+  left:88px;
+  top:10px;
+  font-size:11px;
 }
 
 @keyframes animate{
@@ -129,8 +133,6 @@ body{
   right:0;
   background:rgba(0, 0, 0, 0.229);
 }
-
-/* MidPage */
 
 .introrow{
   font-family:"DM Sans";
@@ -419,7 +421,7 @@ body{
 }
 
 .menuitem img{
-  width:50%;
+  width:70%;
   margin-bottom:20px;
 }
 
@@ -437,6 +439,44 @@ body{
 .cartBtn{
   
   background-color:#F4EBD0;
+}
+
+/* AppPage */
+
+.appheader{
+  font-size:35px;
+  color:#5c3c03;
+  margin-top:50px;
+}
+
+.downloadintro{
+  color:#5c3c03;
+  font-size:50px;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top:50px;
+}
+
+.downloadsubintro{
+  color:#5c3c03;
+  font-size:25px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.downloadBtn{
+  width:100%;
+  display:block;
+}
+
+.fakeqr{
+  border:#5c3c03 10px solid;
+  border-radius:10px;
+}
+
+.downloadOptions{
+  margin-top:100px;
+  display:flex;
+  flex-direction:row;
+  width:80%;
 }
 
 /* MediaQuery */
@@ -535,6 +575,15 @@ body{
   .menuitemlist a{
     font-size:19px;
   }
+
+  .downloadintro{
+    font-size:35px;
+  }
+
+  .downloadBtns{
+    margin-top:5%;
+    display:block;
+  }
 }
 
 @media all and (max-width:1080px){
@@ -545,5 +594,35 @@ body{
   .menuitemlist{
       margin-left:auto;
       margin-right:auto;
+  }
+}
+
+@media all and (max-width:991px){
+  .accnotify{
+    left:80px;
+  }
+}
+
+@media all and (max-width:1448px){
+  .phonecontainer{
+    display:none;
+  }
+
+  .downloadcontainer{
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+  }
+
+  .downloadsubintro{
+    margin-bottom:-50px;
+  }
+
+  .downloadOptions{
+    width:70%;
+  }
+
+  .downloadintro{
+    margin-top:0;
   }
 }
