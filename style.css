@@ -55,7 +55,7 @@ body{
 
 .coffeetext h2{
   color: #fff;
-  font-size: 6vw;
+  font-size: 90px;
   position: absolute;
   transform: translate(-50%, -50%);
 }
@@ -121,6 +121,12 @@ body{
   border-bottom-width:4px;
   border-bottom-style:solid;
   z-index:2;
+  margin-top:-7vh;
+}
+
+.carousel-item img{
+  height:100vh;
+  object-fit:cover;
 }
 
 .carousel-item:after{
@@ -334,7 +340,22 @@ body{
   text-align:center;
 }
 
-/* BottomPage */
+.footer{
+  border-top-color:#835404;
+  border-top-width:4px;
+  border-top-style:solid;
+  padding:0 50px 0px;
+  color:#F4EBD0;
+  margin-top:8vh;
+  background-color:#B68D40;
+}
+
+.footerimg{
+  height:40vh;
+  object-fit:cover;
+  width:100vw;
+  border-bottom:solid #835404 5px;
+}
 
 .footerheader{
   padding:10px;
@@ -470,13 +491,170 @@ body{
 .fakeqr{
   border:#5c3c03 10px solid;
   border-radius:10px;
+  width:30%;
+  margin-left:auto;
+  margin-right:auto;;
+}
+
+.phonecontainer img{
+  width:40vh;
+  margin-left:15vh;
 }
 
 .downloadOptions{
-  margin-top:100px;
+  margin-top:10vh;
   display:flex;
   flex-direction:row;
-  width:80%;
+  width:60vh;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* AccountPage */
+
+#accountbg{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  height:100vh;
+  width:100vw;
+  object-fit:cover;
+}
+
+.accountcontainer{
+  height:75vh;
+  width:43vh;
+  position:relative;
+  border:#F4EBD0 solid 2px;
+  border-radius:10px;
+  background-color:#d5ba87e6
+}
+
+.accounttop{
+  background-color: #392b13e5;
+  height:20%;
+  width:100%;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  display:flex;
+  flex-direction:row;
+}
+
+.accountheader{
+  color:#F4EBD0;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:3vh;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+.accountheader img{
+  width:40%;
+}
+
+.accountbody{
+  margin-left:7%;
+  margin-top:10%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:16px;
+  color:#392b13;
+}
+
+.accountform1{
+  width:93%;
+  background-color:transparent;
+  border:#F4EBD0 solid 2px;
+  border-radius:15px;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: #835404;
+  box-shadow: 0 1px 1px transparent inset, 0 0 8px transparent;
+  outline: 0 none;
+  background-color:transparent;
+}
+
+.remember{
+  display:flex;
+  flex-direction:row;
+  margin-right:7%;
+}
+
+.rememberbox{
+  background-color:transparent;
+  border:solid 2px #F4EBD0;
+}
+
+.rememberbox:hover{
+  background-color:transparent;
+  border-color:#835404;
+}
+
+.accountforgot{
+  margin-left:auto;
+}
+
+.accountforgot a{
+  text-decoration:none;
+  color:#392b13;
+  font-size:13px;
+}
+
+.accountforgot a:hover{
+  color:#F4EBD0;
+  text-decoration:underline;
+  transition:0.3s;
+}
+
+.signinBtn{
+  background-color:transparent;
+  border:solid 2px #F4EBD0;
+  width:85%;
+  margin-left:-2%;
+  border-radius:15px;
+}
+
+.signinBtn{
+  background-color:#f4ebd077;
+  border-color:#F4EBD0;
+}
+
+.signinBtn:hover{
+  border-color:#835404;
+  background-color:#f4ebd0bb;
+  transition:0.3s;
+}
+
+.accountreturn{
+  margin-left:-6%;
+  margin-top:8%;
+}
+
+.accountreturn a{
+  color:#392b13;
+  text-decoration:none;
+}
+
+.accountreturn a:hover{
+  color:#F4EBD0;
+  transition:0.3s;
+  text-decoration:underline;
 }
 
 /* MediaQuery */
@@ -603,15 +781,23 @@ body{
   }
 }
 
-@media all and (max-width:1448px){
+@media all and (max-width:1310px){
   .phonecontainer{
-    display:none;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+  }
+
+  .phonecontainer img{
+    margin-left:auto;
+    margin-right:auto;
   }
 
   .downloadcontainer{
     margin-left:auto;
     margin-right:auto;
     width:90%;
+    margin-top:50px;
   }
 
   .downloadsubintro{
@@ -619,7 +805,8 @@ body{
   }
 
   .downloadOptions{
-    width:70%;
+    width:45vh;
+    height:auto;
   }
 
   .downloadintro{

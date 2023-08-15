@@ -39,7 +39,7 @@
               <a class="nav-link active fw-semibold" aria-current="page" href="app.html" style="color:#edccf9">App</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fw-semibold position-relative" aria-current="page" href="#" style="color:#F4EBD0">Account
+              <a class="nav-link active fw-semibold position-relative" aria-current="page" href="account.html" style="color:#F4EBD0">Account
                 <span class="position-absolute translate-middle badge rounded-pill bg-danger accnotify">
                 3+
                 <span class="visually-hidden">unread notifications</span>
@@ -53,9 +53,15 @@
         </div>
       </div>
   </nav>
-  <div id="carouselExampleAutoplaying" class="carousel carousel-fade slide mx-auto" data-bs-ride="carousel">
+  <div id="carouselAutoplaying" class="carousel carousel-fade slide mx-auto" data-bs-ride="carousel">
+    <div class="carousel-indicators" style="margin-bottom:5vh;">
+      <button style="width:17vh" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button style="width:17vh" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button style="width:17vh" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button style="width:17vh" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
     <div class="carousel-inner position-relative">
-      <div class="position-absolute fw-bold" style="margin-top:3%;margin-bottom:10px;margin-left:5%;font-family:'Times New Roman', Times, serif;font-size:5vw;color:#F4EBD0;z-index:2">
+      <div class="position-absolute fw-bold" style="margin-top:16vh;margin-bottom:10px;margin-left:7%;font-family:'Times New Roman', Times, serif;font-size:70px;color:#F4EBD0;z-index:2">
           <div>We make</div>
           <div style="margin-bottom:15%">the best</div>    
             <div class="coffeetext">
@@ -78,11 +84,11 @@
         <img src="images\coffee4.jpg" class="d-block w-100">
       </div>
     </div>
-    <button class="carousel-control-prev" style="visibility:hidden;" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <button class="carousel-control-prev" style="margin-left:-5%;margin-top:66vh;" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" style="visibility:hidden;" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <button class="carousel-control-next" style="margin-right:-5%;margin-top:66vh;" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -381,10 +387,10 @@
       </div>
     </div>       
   </div>
-  <div class="mt-5" style="position:relative">
-    <img src="images\coffee11.webp" class="bottomimg" style="width:100%;border-top:solid #835404 5px;">
-  </div>
-  <footer style="border-top-color:#835404;border-top-width:4px;border-top-style:solid;padding:0 50px 0px;color:#F4EBD0;margin-top:auto;background-color:#B68D40;">
+  <footer class="footer">
+    <div style="position:relative;margin-left:-50px">
+      <img src="images\coffee11.webp" class="footerimg">
+    </div>
     <div class="row">
           <div class="col-sm-3 col-md-3">
               <div class="footerheader fw-semibold">Locations</div>
