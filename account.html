@@ -34,13 +34,45 @@
         </div>
       </div>
       <div class="text-center" style="margin-left:-6%;">
-        <button type="submit" class="btn btn-primary signinBtn">Sign in</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#accountModal" class="btn btn-primary signinBtn">Sign in</button>
+      </div>
+      <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title" id="accountModalLabel"><img src="images\navlogo.png"></div>
+              <button type="button" class="btn-close me-1 modalBtn" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Signed in successfully.</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="w-75 mt-3 mb-3" style="background-color:#F4EBD0;height:2px;margin-right:auto;margin-left:8%;"></div>
+      <div style="display:flex;flex-direction:row;gap:1vh;justify-content:center;margin-left:-10%">
+        <div>
+          <a href="#"><img src="images\googlesignin.png" style="width:5vh"></a>
+        </div>
+        <div>
+          <a href="#"><img src="images\facebooksignin.png" style="width:5vh"></a>
+        </div>
+        <div>
+          <a href="#"><img src="images\githubsignin.png" style="width:5vh"></a>
+        </div>
+      </div>
       <div class="text-center accountreturn">
         <a href="index.html">Return to homepage</a>
       </div>
     </div>   
   </div>
+  <script>
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+      myInput.focus()
+    })
+  </script>
 </body>
 </html>

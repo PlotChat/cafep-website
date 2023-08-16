@@ -641,6 +641,28 @@ input[type="color"]:focus,
   transition:0.3s;
 }
 
+.modal-content{
+  background-color:#392b13;
+  border-bottom-color:#392b13 solid 3px;
+  border: #F4EBD0 solid 2px;
+  border-radius:15px;
+}
+
+.modal-title img{
+  width:70%;
+}
+
+.modalBtn{
+  background-color:#d5ba87;
+}
+
+.modal-body{
+  color:#392b13;
+  background-color:#d5ba87e6;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+}
+
 .accountreturn{
   margin-left:-6%;
   margin-top:8%;
