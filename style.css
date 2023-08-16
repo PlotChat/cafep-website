@@ -520,6 +520,7 @@ body{
   height:150vh;
   width:100vw;
   object-fit:cover;
+  overflow:hidden;
 }
 
 .accountcontainer{
