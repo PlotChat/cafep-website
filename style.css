@@ -515,7 +515,6 @@ body{
 #accountbg{
   position:absolute;
   top:0;
-  left:-500px;
   z-index:-1;
   height:150vh;
   width:150vw;
