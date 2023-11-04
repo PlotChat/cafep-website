@@ -451,7 +451,7 @@ body{
 }
 
 .cartcontainer{
-  height:200px;
+  height:auto;
   width:80%;
   background-color:rgb(255, 239, 219);
   box-shadow:rgb(165, 110, 42) 5px 5px 20px 5px;
@@ -628,14 +628,27 @@ input[type="color"]:focus,
   width:85%;
   margin-left:-2%;
   border-radius:15px;
-}
-
-.signinBtn{
   background-color:#f4ebd077;
   border-color:#F4EBD0;
 }
 
 .signinBtn:hover{
+  border-color:#835404;
+  background-color:#f4ebd0bb;
+  transition:0.3s;
+}
+
+.signupBtn{
+  background-color:transparent;
+  border:solid 2px #F4EBD0;
+  width:20%;
+  margin-left:-1%;
+  border-radius:15px;
+  background-color:#f4ebd077;
+  border-color:#F4EBD0;
+}
+
+.signupBtn:hover{
   border-color:#835404;
   background-color:#f4ebd0bb;
   transition:0.3s;
@@ -658,7 +671,7 @@ input[type="color"]:focus,
 
 .modal-body{
   color:#392b13;
-  background-color:#d5ba87e6;
+  background-color:#d5ba87;
   border-bottom-left-radius:15px;
   border-bottom-right-radius:15px;
 }
