@@ -20,7 +20,7 @@ function signin(){
     $("#signupBtn").hide();
     accountNameInput = document.getElementById("InputEmail").value;
     accountpassInput = document.getElementById("InputPassword").value;
-    account = {name: accountNameInput, pass: accountpassInput}
+    account = {name: accountNameInput, pass: accountpassInput};
     if (accountNameInput != "" && accountpassInput != ""){
         if (account in accounts){
             signinupPopup();
@@ -41,7 +41,7 @@ function signup(){
     $("#accountModal").modal("toggle");
     accountNameInput = document.getElementById("InputEmail").value;
     accountpassInput = document.getElementById("InputPassword").value;
-    account = {name: accountNameInput, pass: accountpassInput}
+    account = {name: accountNameInput, pass: accountpassInput};
     accounts.push(account);
     setTimeout(signinupSuccess, 700);
 }
@@ -103,5 +103,5 @@ function removeItem(){
 }
 
 function checkout(){
-    alert("Redirecting to checkout page...")
+    alert("Redirecting to checkout page...");
 }
